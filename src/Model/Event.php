@@ -1139,4 +1139,6 @@ class Event extends OutlookItem
             return null;
         }
     }
+	
+    // i hope it will work, valsis changes
 }
