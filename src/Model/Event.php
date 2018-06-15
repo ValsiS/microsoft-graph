@@ -1099,5 +1099,44 @@ class Event extends OutlookItem
 		$this->_propDict["multiValueExtendedProperties"] = $val;
         return $this;
     }
-    
+	
+	
+    public function getCategoryColor()
+    {
+        if (array_key_exists("color", $this->_propDict)) {
+           return $this->_propDict["color"];
+        } else {
+            return null;
+        }
+    }
+	
+
+    public function getCategoryDisplayName()
+    {
+        if (array_key_exists("displayName", $this->_propDict)) {
+           return $this->_propDict["displayName"];
+        } else {
+            return null;
+        }
+    }
+
+
+    public function getLastModifiedDateTime()
+    {
+        if (array_key_exists("lastModifiedDateTime", $this->_propDict)) {
+           return $this->_propDict["lastModifiedDateTime"];
+        } else {
+            return null;
+        }
+    }
+
+	
+    public function getChangeKey()
+    {
+        if (array_key_exists("changeKey", $this->_propDict)) {
+           return $this->_propDict["changeKey"];
+        } else {
+            return null;
+        }
+    }
 }
